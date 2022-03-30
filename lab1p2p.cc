@@ -70,6 +70,8 @@ int main (int argc, char *argv[])
     AsciiTraceHelper ascii;
     p2p1.EnableAsciiAll (ascii.CreateFileStream ("P2ptr.tr"));
     //Run the simulator
+ //cp examples/tutorial/first.cc scratch/first.cc
+ //./waf --run scratch/first
     Simulator::Run ();
     Simulator::Destroy ();
     return 0;
