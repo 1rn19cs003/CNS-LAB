@@ -79,6 +79,9 @@ main (int argc, char *argv[])
   // finally, print the ping rtts.
   Config::Connect ("/NodeList/*/ApplicationList/*/$ns3::V4Ping/Rtt",MakeCallback (&PingRtt));
   //  NS_LOG_INFO ("Run Simulation.");
+// 	cp examples/tutorial/first.cc scratch/first.cc
+//  ./waf --run scratch/first
+// 	
   AsciiTraceHelper ascii;
   csma.EnableAsciiAll (ascii.CreateFileStream ("ping1.tr"));
   Simulator::Run ();
