@@ -137,4 +137,6 @@ main (int argc, char *argv[])
   Simulator::Run ();
   Simulator::Destroy ();
   return 0;
+//   ./waf - - run scratch/Program3 - -vis
+//   
 }
