@@ -74,6 +74,8 @@ int main(int argc, char *argv[])
     Simulator::Stop(Seconds(simTime));
     Simulator::Run();
     /*GtkConfigStore config;
+    cp examples/tutorial/first.cc scratch/first.cc
+ ./waf --run scratch/first
  config.ConfigureAttributes();*/
     Simulator::Destroy();
     return 0;
